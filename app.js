@@ -2,14 +2,26 @@ const popupContainer = document.createElement("div");
 popupContainer.innerHTML = `
     <div class="popup-container">
         <div class="popup-background">
-            <div class="popup-card">
-            
-                <div class="left-card">
-                    <img src="https://cdn.webrazzi.com/uploads/2020/07/insider-yatirim-343.png" alt="Description of the image">
-                </div>
+           <form>
+                    <div class="popup-card">
+                        
+                        <div class="left-card">
+                            <img src="https://cdn.webrazzi.com/uploads/2020/07/insider-yatirim-343.png" alt="Description of the image">
+                        </div>
 
-                <div class="right-card"></div>
-            </div>
+                        <div class="right-card">
+                            <h1>Title</h1>
+                            <h3>Short Text</h3> 
+                            <div class="input-part">
+                                <input>
+                                <input>
+                                <button>BE FIRST</button>
+                           
+                            </div>
+                            <input type="checkbox"> Aggrement </input>
+                        </div>
+                   </div>
+           </form>
         </div>
     </div>
 `;
@@ -44,6 +56,7 @@ const style = `
         display: flex;
         justify-content: center;
         align-items: center;
+   
     }
 
     .left-card,.right-card{
@@ -57,8 +70,30 @@ const style = `
     }
     .right-card{
         right:0;
-        background-color:blue;
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
     }
+
+    .input-part{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+        width:200px;
+      
+    }
+
+    input,button{
+        width:100%;
+        border:1px solid black;
+        border-radius:5px;
+        height:30px;
+    }
+
 
     img{
        width:100%;
