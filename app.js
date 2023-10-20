@@ -18,9 +18,10 @@ popupContainer.innerHTML = `
                                 <button>BE FIRST</button>
                                 <div class="input-agreement">
                                     <input type="checkbox">
-                                    <h3>Agreement</h3>
+                                    If you want to read and check the aggrement you should give a tick in the checkbox
                                 </div>
                             </div>
+                            
                         </div>
                    </div>
            </form>
@@ -76,7 +77,7 @@ const style = `
         flex-direction:column;
         justify-content: center;
         align-items: center;
-        gap:10px;
+        gap:15px;
     }
 
     .input-part{
@@ -86,26 +87,28 @@ const style = `
         align-items: center;
         gap:10px;
         width:70%;
+      
     }
 
     .input-email,.input-phone,button{
+     
         width:100%;
+
         border:1px solid black;
         border-radius:5px;
-        height:30px;
+        height:40px;
         padding:5px;
-    
         box-sizing: border-box;
+      
     }
-
 
     .input-agreement{
         display:flex;
         justify-content: center;
         align-items: center;
         gap:15px;
-    }
 
+    }
 
     img{
        width:100%;
@@ -116,7 +119,6 @@ const style = `
 // Create a <style> element and set its content
 const styleElement = document.createElement("style");
 styleElement.innerHTML = style;
-
 
 // Append the style to the <head>
 document.head.appendChild(styleElement);
