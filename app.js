@@ -13,12 +13,14 @@ popupContainer.innerHTML = `
                             <h1>Title</h1>
                             <h3>Short Text</h3> 
                             <div class="input-part">
-                                <input>
-                                <input>
+                                <input type="email" name="email" id="email" class = "input-email" placeholder="Email">
+                                <input type="tel" name="phone" id="phone" class = "input-phone"  placeholder="Phone Number">
                                 <button>BE FIRST</button>
-                           
+                                <div class="input-agreement">
+                                    <input type="checkbox">
+                                    <h3>Agreement</h3>
+                                </div>
                             </div>
-                            <input type="checkbox"> Aggrement </input>
                         </div>
                    </div>
            </form>
@@ -56,7 +58,6 @@ const style = `
         display: flex;
         justify-content: center;
         align-items: center;
-   
     }
 
     .left-card,.right-card{
@@ -64,10 +65,11 @@ const style = `
         width:50%;
         height:100%;
     }
+
     .left-card{
         left:0;
-        
     }
+
     .right-card{
         right:0;
         display:flex;
@@ -83,15 +85,25 @@ const style = `
         justify-content: center;
         align-items: center;
         gap:10px;
-        width:200px;
-      
+        width:70%;
     }
 
-    input,button{
+    .input-email,.input-phone,button{
         width:100%;
         border:1px solid black;
         border-radius:5px;
         height:30px;
+        padding:5px;
+    
+        box-sizing: border-box;
+    }
+
+
+    .input-agreement{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap:15px;
     }
 
 
